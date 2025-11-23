@@ -43,7 +43,7 @@ function Contact() {
               <div>
                 <p className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
-                }`}>x (formerly twitter)</p>
+                }`}>x</p>
                 <a
                   href="https://twitter.com/mresitcom"
                   target="_blank"
