@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Linkedin, Instagram } from 'lucide-react';
 import { useTheme } from '../ThemeContext';
 
 function Contact() {
@@ -20,11 +20,30 @@ function Contact() {
         }`}>
           <div className="space-y-8">
             <div className="flex items-center gap-4 group">
-              <X className="text-cyan-400" size={24} />
+              <Instagram className="text-cyan-400" size={24} />
               <div>
                 <p className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
-                }`}>twitter</p>
+                }`}>instagram</p>
+                <a
+                  href="https://www.instagram.com/mehmetresitgul/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:underline text-lg"
+                >
+                  @mehmetresitgul
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 group">
+              <svg className="text-cyan-400" size={24} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 4l16 16M20 4L4 20"/>
+              </svg>
+              <div>
+                <p className={`text-sm transition-colors duration-300 ${
+                  isDark ? 'text-gray-400' : 'text-gray-600'
+                }`}>x (formerly twitter)</p>
                 <a
                   href="https://twitter.com/mresitcom"
                   target="_blank"
