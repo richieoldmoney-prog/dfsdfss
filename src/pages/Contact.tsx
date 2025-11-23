@@ -37,13 +37,13 @@ function Contact() {
             </div>
 
             <div className="flex items-center gap-4 group">
-              <svg className="text-cyan-400" size={24} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 4l16 16M20 4L4 20"/>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="text-cyan-400">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.223-6.82-5.974 6.82h-3.31l7.732-8.835L2.882 2.25h6.822l4.79 6.335 5.486-6.335z"/>
               </svg>
               <div>
                 <p className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
-                }`}>x (formerly twitter)</p>
+                }`}>x</p>
                 <a
                   href="https://twitter.com/mresitcom"
                   target="_blank"
