@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
-import profileImg from './Adsız tasarım (14).png';
+import profileImg from './mehmetresitgul.png';
 
 function AppContent() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
