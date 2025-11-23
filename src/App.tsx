@@ -272,11 +272,18 @@ function AppContent() {
 
       <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-auto mx-auto px-4">
         <div
-          className={`backdrop-blur-xl border rounded-full px-12 py-3 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.35),inset_0_0_10px_4px_rgba(255,255,255,0.15),0_4px_16px_rgba(17,17,26,0.05),0_8px_24px_rgba(17,17,26,0.05),0_16px_56px_rgba(17,17,26,0.05)] transition-all duration-300 flex items-center justify-between min-w-[800px] ${
+          className={`backdrop-blur-[10px] border rounded-full px-12 py-3 transition-all duration-300 flex items-center justify-between min-w-[800px] ${
             isDark
-              ? 'bg-black/15 border-white/20 hover:bg-black/35 hover:border-white/30'
-              : 'bg-white/15 border-gray-300/50 hover:bg-white/35 hover:border-gray-300/70'
+              ? 'bg-black/30 border-white/20 hover:bg-black/40 hover:border-white/30'
+              : 'bg-white/70 border-black/10 hover:bg-white/80 hover:border-black/20'
           }`}
+          style={{
+            WebkitBackdropFilter: 'blur(10px) saturate(180%)',
+            backdropFilter: 'blur(10px) saturate(180%)',
+            boxShadow: isDark
+              ? '0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 0 0 1px 1px rgba(255, 255, 255, 0.1)'
+              : '0 8px 32px 0 rgba(31, 38, 135, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.3)'
+          }}
         >
           <div className="flex items-center gap-2">
             <img
