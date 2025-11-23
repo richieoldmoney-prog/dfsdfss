@@ -20,7 +20,7 @@ function Contact() {
         }`}>
           <div className="space-y-8">
             <div className="flex items-center gap-4 group">
-              <Twitter className="text-cyan-400" size={24} />
+              <X className="text-cyan-400" size={24} />
               <div>
                 <p className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-400' : 'text-gray-600'
